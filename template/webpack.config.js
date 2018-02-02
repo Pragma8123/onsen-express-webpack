@@ -38,12 +38,6 @@ module.exports = {
       },
       {{/sass}}
       {
-        enforce: 'pre',
-        test: /\.vue$/,
-        loader: 'eslint-loader',
-        exclude: /mode_modules/,
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -83,7 +77,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',
