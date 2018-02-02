@@ -1,8 +1,23 @@
 <template>
-<div>
-  <h1>{{ name }}</h1>
-  <p>{{ description }}</p>
-</div>
+<v-ons-page>
+  <v-ons-toolbar>
+    <div class="center">
+      {{ name }}
+    </div>
+    <div class="right">
+      <v-ons-toolbar-button>
+        <v-ons-icon icon="ion-navicon, material: md-menu" />
+      </v-ons-toolbar-button>
+    </div>
+  </v-ons-toolbar>
+  <p style="text-align: center">
+    <v-ons-button
+      @click="$ons.notification.alert(message)"
+    >
+      Click me!
+    </v-ons-button>
+  </p>
+</v-ons-page>
 </template>
 
 <script>
