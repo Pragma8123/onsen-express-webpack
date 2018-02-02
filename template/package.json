@@ -29,6 +29,7 @@
     "file-loader": "^1.1.6",
     "onsenui": "^2.9.1",
     {{#sass}}
+    "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     {{/sass}}
     "vue": "^2.5.13",
